@@ -35,11 +35,11 @@ body{
 }
 
 .info-photo{
-  display: inline-block;
+  float: left;
 }
 .info-content{
-  display:inline-block;
-  padding-left: 212px;
+  width: 550px;
+  margin-left: auto;
 }
 .info-content h1{
   margin-bottom: 50px;
@@ -61,6 +61,8 @@ body{
 }
 .about{
   text-align: center;
+  /* нужно отменять обтекаемость от флоата у последующего блока иначе ест ьвероятность что этот блок тоже начнет обтекать */
+  clear: both;
 }
 .about h1{
   margin-bottom: 50px;
